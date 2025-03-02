@@ -3,7 +3,8 @@ import 'package:simpleloginpage/loginpage.dart';
 
 void main() {
   runApp(MaterialApp(
-    home:Loginpage()
+    home:Loginpage(),
+        debugShowCheckedModeBanner: false,
   ));
 }
 

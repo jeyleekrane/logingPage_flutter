@@ -7,16 +7,20 @@ class Loginpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple[600],
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
+
           "Rapid Tech",
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.bold,
             fontSize: 16.0,
           ),
+
         ),
+        backgroundColor: Colors.teal,
+
         centerTitle: true,
       ),
       body: Container(
