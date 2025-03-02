@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpleloginpage/myprofiledrawer.dart';
 
 class Loginpage extends StatelessWidget {
   const Loginpage({super.key});
@@ -6,16 +7,17 @@ class Loginpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.teal,
+      backgroundColor: Colors.purple[600],
       appBar: AppBar(
         title: Text(
           "Rapid Tech",
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontWeight: FontWeight.bold,
             fontSize: 16.0,
           ),
         ),
+        centerTitle: true,
       ),
       body: Container(
         child: Center(
@@ -29,19 +31,7 @@ class Loginpage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Drawer(
-        child: SingleChildScrollView(
-          child: Container(
-            child: Column(
-              children: [
-                //profile picture, headerDrawer
-                //list view Mylist of coloume icons
-              ],
-            ),
-          ),
-        )
-        ,
-      ),
+      drawer: Myprofiledrawer(),
     );
   }
 }
